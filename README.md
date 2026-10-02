@@ -276,7 +276,7 @@ swisshacks-backend   | INFO:     Application startup complete.
 swisshacks-frontend  | ✓ Ready in 2.1s
 ```
 
-To double-check, open <http://localhost:8001/health>. It should show `{"status":"ok","db":"reachable"}`.
+To double-check, open <http://localhost:8001/health>. It should show `{"status":"healthy", ...}`.
 
 **4. Open the app**
 

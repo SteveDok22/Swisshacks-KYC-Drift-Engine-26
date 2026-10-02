@@ -18,8 +18,7 @@ env/
 htmlcov/
 tests/
 
-# uv (image installs from pyproject.toml, no lock needed)
-uv.lock
+# uv (uv.lock is needed: the image installs pinned versions from it)
 .uv/
 
 # Local SQLite databases — never bake these into the image

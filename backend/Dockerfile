@@ -11,20 +11,22 @@ COPY --from=ghcr.io/astral-sh/uv:0.11 /uv /uvx /bin/
 WORKDIR /app
 
 # Copy only dependency files first (for Docker layer caching)
-COPY pyproject.toml ./
+COPY pyproject.toml uv.lock ./
 
 # Install dependencies into a virtualenv inside the image
 ENV UV_LINK_MODE=copy \
     UV_COMPILE_BYTECODE=1 \
     UV_PYTHON_DOWNLOADS=never
 
-# Install core deps, then the optional `embeddings` dependency (model2vec) so the
-# UC9 website-drift comparator works. model2vec is pure-NumPy (no torch), keeping
-# the image lean.
+# Install the exact versions pinned in uv.lock (core deps + the `embeddings`
+# group, model2vec, so the UC9 website-drift comparator works). Installing from
+# the lock rather than pyproject's `>=` ranges keeps fresh builds reproducible —
+# an unpinned sqlmodel upgrade once broke startup seeding. model2vec is
+# pure-NumPy (no torch), keeping the image lean.
 RUN uv venv /opt/venv && \
     . /opt/venv/bin/activate && \
-    uv pip install --no-cache -r pyproject.toml && \
-    uv pip install --no-cache model2vec
+    uv export --frozen --no-dev --group embeddings --no-emit-project -o /tmp/requirements.txt && \
+    uv pip install --no-cache -r /tmp/requirements.txt
 
 # Pre-download the model2vec static model into a baked HF cache so the live
 # website-drift demo runs fully offline (no HuggingFace fetch at runtime).
