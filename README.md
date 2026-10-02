@@ -226,26 +226,93 @@ A full live-entity walkthrough (real GLEIF / OpenSanctions / news data, cached f
 
 ## Running Locally
 
-One command with Docker. Full setup in **[QUICKSTART.md](QUICKSTART.md)**.
+You don't need any API keys. By default the app runs **fully offline** with demo data.
+
+### Option A — Docker (easiest)
+
+**You need:** [Docker Desktop](https://www.docker.com/products/docker-desktop/) (installed and running).
+
+1. Get the code:
+
+   ```bash
+   git clone https://github.com/SteveDok22/Swisshacks-KYC-Drift-Engine-26.git
+   cd Swisshacks-KYC-Drift-Engine-26
+   ```
+
+2. Start everything:
+
+   ```bash
+   docker compose up --build
+   ```
+
+   The first build takes a few minutes. Wait until the logs stop scrolling.
+
+3. Open in your browser:
+
+   | What | Link |
+   |---|---|
+   | The app | <http://localhost:3000> |
+   | Drift Engine | <http://localhost:3000/drift> |
+   | API docs | <http://localhost:8001/docs> |
+
+4. To stop it, press `Ctrl + C`. Or, from another terminal, run `docker compose down`.
+
+> **Note:** with Docker the backend is on port **8001** (not 8000), so it won't clash with other apps.
+
+### Option B — Without Docker
+
+**You need:** Python 3.11+, [uv](https://docs.astral.sh/uv/getting-started/installation/), and Node.js 20+.
+
+Open **two terminals**.
+
+**Terminal 1 — backend:**
 
 ```bash
-docker compose up --build
+cd backend
+make install   # first time only
+make dev       # runs on http://localhost:8000
 ```
 
-Builds and starts both containers (frontend + backend) with hot reload. SQLite
-is disposable: the schema is recreated and mock data is seeded on every backend
-startup. Open
-<http://localhost:3000/drift> for the Drift Engine, or
-<http://localhost:8000/docs> for the API.
+**Terminal 2 — frontend:**
+
+```bash
+cd frontend
+npm install    # first time only
+npm run dev    # runs on http://localhost:3000
+```
+
+Then open <http://localhost:3000>. The API docs are at <http://localhost:8000/docs>.
+
+### Good to know
+
+- **Fresh data on every start.** The database (SQLite) is wiped and refilled with demo data each time the backend starts. You can't break anything.
+- **Code changes reload automatically**, in both options.
+- **Live APIs are optional.** To use real external data and the Claude LLM, copy `backend/.env.example` to `backend/.env`, add your keys, and set `EXTERNAL_APIS_ENABLED=true`. See [docs/getting-started.md](docs/getting-started.md) for details.
+
+### Troubleshooting
+
+| Problem | Fix |
+|---|---|
+| `Cannot connect to the Docker daemon` | Start Docker Desktop first. |
+| `port is already allocated` | Another app is using port 3000 or 8001. Close it, or run `docker compose down` to stop old containers. |
+| The page loads but shows no data | The backend is still starting. Wait about 30 seconds and refresh. |
+| Something is stuck | `docker compose down -v` then `docker compose up --build` |
 
 ---
 
 ## Testing
 
-Run the suite in Docker (no local Python needed):
+With Docker (no local Python needed):
 
 ```bash
 docker compose run --rm backend-tests
+```
+
+Without Docker:
+
+```bash
+cd backend
+make test
 ```
 
 What's covered:
