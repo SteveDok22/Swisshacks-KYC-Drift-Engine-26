@@ -10,11 +10,11 @@ Python, Node, or API keys.
 ## Run
 
 ```bash
-docker compose up --build          # backend :8000 · frontend :3000
+docker compose up --build          # backend :8001 · frontend :3000
 ```
 
 - App: **http://localhost:3000**
-- API docs (Swagger): **http://localhost:8000/docs**
+- API docs (Swagger): **http://localhost:8001/docs**
 
 > Need a **public URL** to show the demo from your laptop (no deploy)? See
 > [public-demo.md](public-demo.md) — a one-command tunnel.
@@ -26,7 +26,7 @@ plus 5 live entities that replay from committed response caches. No keys require
 
 | Service | Port | Purpose |
 |---|---|---|
-| `backend` | 8000 | FastAPI app (uvicorn, hot reload) |
+| `backend` | 8001 (8000 inside Docker) | FastAPI app (uvicorn, hot reload) |
 | `frontend` | 3000 | Next.js dev server, proxies `/api/backend/*` → backend |
 | `backend-tests` | — | pytest suite (profile `test`; not started by `up`) |
 
@@ -80,7 +80,7 @@ To (re)populate after changing a live entity:
 ```bash
 # open each live entity's detail in the UI, or hit the endpoint twice:
 for id in drift-live-001 drift-live-002 drift-live-003 drift-live-004 drift-live-005; do
-  curl -s "http://localhost:8000/api/v1/drift/subjects/$id" -o /dev/null
+  curl -s "http://localhost:8001/api/v1/drift/subjects/$id" -o /dev/null
 done
 git add backend/data/api_cache/        # commit the populated caches
 ```

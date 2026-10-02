@@ -226,77 +226,128 @@ A full live-entity walkthrough (real GLEIF / OpenSanctions / news data, cached f
 
 ## Running Locally
 
-You don't need any API keys. By default the app runs **fully offline** with demo data.
+**Short version:** install Docker Desktop, run `docker compose up --build`, and open <http://localhost:3000>. No API keys and no accounts are needed. The app runs **fully offline** with built-in demo data.
 
-### Option A — Docker (easiest)
+### What you are starting
 
-**You need:** [Docker Desktop](https://www.docker.com/products/docker-desktop/) (installed and running).
+The app has two parts. Both start together:
 
-1. Get the code:
+| Part | What it does | Address (Docker) | Address (without Docker) |
+|---|---|---|---|
+| **Frontend** (Next.js) | The web app you click around in | <http://localhost:3000> | <http://localhost:3000> |
+| **Backend** (FastAPI) | Runs the drift engine and serves the data | <http://localhost:8001/docs> | <http://localhost:8000/docs> |
 
-   ```bash
-   git clone https://github.com/SteveDok22/Swisshacks-KYC-Drift-Engine-26.git
-   cd Swisshacks-KYC-Drift-Engine-26
-   ```
+You only ever open the **frontend**. It talks to the backend for you, so you don't have to configure anything. The backend link is only useful if you want to explore the API directly.
 
-2. Start everything:
+There is no separate database to install. On every start the backend:
 
-   ```bash
-   docker compose up --build
-   ```
+1. creates a fresh SQLite database file,
+2. fills it with demo data (20 customers, 10 clients, 19 compliance cases and an audit history),
+3. trains the ML models (first start only, takes a few seconds),
+4. then reports itself as ready.
 
-   The first build takes a few minutes. Wait until the logs stop scrolling.
+Because the data is rebuilt on every start, you can click, decide and override anything and nothing will break. Restarting resets the demo.
 
-3. Open in your browser:
+### Option A: Docker (recommended)
 
-   | What | Link |
-   |---|---|
-   | The app | <http://localhost:3000> |
-   | Drift Engine | <http://localhost:3000/drift> |
-   | API docs | <http://localhost:8001/docs> |
+**You need:** [Docker Desktop](https://www.docker.com/products/docker-desktop/), installed and **running** (the whale icon is in your menu bar or taskbar).
 
-4. To stop it, press `Ctrl + C`. Or, from another terminal, run `docker compose down`.
+**1. Get the code**
 
-> **Note:** with Docker the backend is on port **8001** (not 8000), so it won't clash with other apps.
+```bash
+git clone https://github.com/SteveDok22/Swisshacks-KYC-Drift-Engine-26.git
+cd Swisshacks-KYC-Drift-Engine-26
+```
 
-### Option B — Without Docker
+**2. Start everything**
 
-**You need:** Python 3.11+, [uv](https://docs.astral.sh/uv/getting-started/installation/), and Node.js 20+.
+```bash
+docker compose up --build
+```
 
-Open **two terminals**.
+This builds both parts and starts them. The **first run takes a few minutes** because it downloads and installs dependencies. Later runs take seconds.
 
-**Terminal 1 — backend:**
+**3. Wait until it's ready**
+
+The frontend waits for the backend to pass its health check, so they come up in order. It's ready when the logs show something like:
+
+```text
+swisshacks-backend   | INFO:     Application startup complete.
+swisshacks-frontend  | ✓ Ready in 2.1s
+```
+
+To double-check, open <http://localhost:8001/health>. It should show `{"status":"ok","db":"reachable"}`.
+
+**4. Open the app**
+
+Go to **<http://localhost:3000>**. The first page load can take 10–20 seconds while Next.js compiles it. After that, pages are fast.
+
+**5. Stop it**
+
+Press `Ctrl + C` in the terminal where it is running. To remove the containers completely, run:
+
+```bash
+docker compose down
+```
+
+> **Why port 8001?** Inside Docker the backend runs on port 8000, but it is published on **8001** on your machine so it doesn't clash with other apps that commonly use 8000.
+
+### Option B: Without Docker
+
+Use this if you want to run the code directly, for example to debug in your IDE.
+
+**You need:** Python 3.11+, [uv](https://docs.astral.sh/uv/getting-started/installation/) (Python package manager), and Node.js 20+.
+
+You'll run the backend and the frontend in **two separate terminals**, both from the project folder. Start the backend first.
+
+**Terminal 1: backend**
 
 ```bash
 cd backend
-make install   # first time only
-make dev       # runs on http://localhost:8000
+make install   # first time only: creates a virtual env and installs packages
+make dev       # starts the API on http://localhost:8000
 ```
 
-**Terminal 2 — frontend:**
+Wait for `Application startup complete.` before moving on.
+
+**Terminal 2: frontend**
 
 ```bash
 cd frontend
-npm install    # first time only
-npm run dev    # runs on http://localhost:3000
+npm install    # first time only: installs packages
+npm run dev    # starts the web app on http://localhost:3000
 ```
 
-Then open <http://localhost:3000>. The API docs are at <http://localhost:8000/docs>.
+Then open **<http://localhost:3000>**. The API docs are at <http://localhost:8000/docs>.
+
+To stop, press `Ctrl + C` in each terminal.
+
+### What to try first
+
+Once the app is open:
+
+1. **Drift workspace** (<http://localhost:3000>): a radar of all 20 customers, plotted by drift score against drift velocity. The upper-right corner holds the customers that need attention first.
+2. **Castor Trade Finance AG** (<http://localhost:3000/drift/drift-011>): the flagship case. It combines structuring, a newly sanctioned owner and adverse media. Check the per-layer breakdown, the Causal Panel and the Time-Travel Audit.
+3. **Rosneft Trading S.A.** (<http://localhost:3000/drift/drift-live-002>): a real company with real sanctions data, replayed offline from a saved cache.
+4. **Case Queue** (<http://localhost:3000/cases>): record a decision on a case.
+5. **Audit log** (<http://localhost:3000/audit>): every decision you just made appears here.
 
 ### Good to know
 
-- **Fresh data on every start.** The database (SQLite) is wiped and refilled with demo data each time the backend starts. You can't break anything.
-- **Code changes reload automatically**, in both options.
-- **Live APIs are optional.** To use real external data and the Claude LLM, copy `backend/.env.example` to `backend/.env`, add your keys, and set `EXTERNAL_APIS_ENABLED=true`. See [docs/getting-started.md](docs/getting-started.md) for details.
+- **Code changes reload automatically** in both options. You don't need to restart after editing a file.
+- **Offline by default.** No calls go to external services. The "live" entities replay real responses saved in `backend/data/api_cache/`.
+- **Real APIs are optional.** To use live external data and the Claude LLM, copy `backend/.env.example` to `backend/.env`, add your keys, set `EXTERNAL_APIS_ENABLED=true`, and restart. See [docs/getting-started.md](docs/getting-started.md) for which keys do what.
 
 ### Troubleshooting
 
 | Problem | Fix |
 |---|---|
-| `Cannot connect to the Docker daemon` | Start Docker Desktop first. |
-| `port is already allocated` | Another app is using port 3000 or 8001. Close it, or run `docker compose down` to stop old containers. |
+| `Cannot connect to the Docker daemon` | Docker Desktop isn't running. Start it, wait until it's ready, and try again. |
+| `port is already allocated` / `address already in use` | Another app is using port 3000, 8001 (Docker) or 8000 (without Docker). Close it, or run `docker compose down` to stop old containers. |
 | The page loads but shows no data | The backend is still starting. Wait about 30 seconds and refresh. |
-| Something is stuck | `docker compose down -v` then `docker compose up --build` |
+| The first page is very slow | Normal on the first visit. Next.js compiles each page the first time it's opened. |
+| `make: uv: command not found` | Install uv: [uv installation guide](https://docs.astral.sh/uv/getting-started/installation/). |
+| Something is stuck or behaving oddly | Reset everything: `docker compose down -v`, then `docker compose up --build`. |
 
 ---
 
