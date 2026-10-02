@@ -275,15 +275,19 @@ class GleifAdapter(CostMixin, RegistryAdapter):
         return lei  # type: ignore[no-any-return]
 
     async def _get_parent_lei(self, lei: str) -> str | None:
-        # Wrapped as {"lei": ...} so a successful "no parent" answer is cacheable
+        # Wrapped as {"lei": ...} so a definitive "no parent" answer is cacheable
         # too (a bare None would read back as a cache miss). Only 2xx responses
-        # are cached; errors and 429s are retried on the next call.
+        # and GLEIF's explicit "no parent reported" 404 are cached; any other
+        # error (429, 5xx, unknown LEI) is retried on the next call.
         cached = self._cache.get(f"parent:{lei}")
         if cached is not None:
             return cached.get("lei")  # type: ignore[no-any-return]
         try:
             resp = await self._http.get(f"/lei-records/{lei}/ultimate-parent")
         except httpx.TransportError:
+            return None
+        if _is_no_relationship_response(resp):
+            self._cache.set(f"parent:{lei}", {"lei": None})
             return None
         if not resp.is_success:
             return None
@@ -389,6 +393,26 @@ class GleifAdapter(CostMixin, RegistryAdapter):
 # ---------------------------------------------------------------------------
 # Pure normalisation helpers — module-level so tests can call them directly.
 # ---------------------------------------------------------------------------
+
+def _is_no_relationship_response(resp: httpx.Response) -> bool:
+    """True for GLEIF's JSON:API 404 meaning "no such relationship reported".
+
+    GLEIF answers ``/ultimate-parent`` for an entity without a reported parent
+    with a 404 whose JSON body carries ``"detail": "Related resource not
+    found"``. Other 404s (unknown LEI, wrong path) return an HTML page and are
+    not definitive, so they must not be treated as "no parent".
+    """
+    if resp.status_code != 404:
+        return False
+    try:
+        errors = resp.json().get("errors") or []
+    except ValueError:  # HTML 404 page
+        return False
+    return any(
+        isinstance(e, dict) and e.get("detail") == "Related resource not found"
+        for e in errors
+    )
+
 
 def _extract_name(entity: dict[str, Any]) -> str:
     legal_name = entity.get("legalName", {})
