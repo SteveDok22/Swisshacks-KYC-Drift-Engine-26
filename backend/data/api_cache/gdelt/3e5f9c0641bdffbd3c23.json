@@ -1,0 +1,1758 @@
+{
+  "key_raw": "timeline:Temenos AG:timelinevolraw:12m",
+  "cached_at": "2026-10-02T12:16:09.264573+00:00",
+  "data": {
+    "columns": [
+      "datetime",
+      "Article Count",
+      "All Articles"
+    ],
+    "records": [
+      {
+        "datetime": "2025-10-08T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 188586
+      },
+      {
+        "datetime": "2025-10-09T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 199353
+      },
+      {
+        "datetime": "2025-10-10T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 214290
+      },
+      {
+        "datetime": "2025-10-11T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 133634
+      },
+      {
+        "datetime": "2025-10-12T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 128616
+      },
+      {
+        "datetime": "2025-10-13T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 179288
+      },
+      {
+        "datetime": "2025-10-14T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 211408
+      },
+      {
+        "datetime": "2025-10-15T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 131390
+      },
+      {
+        "datetime": "2025-10-16T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 188672
+      },
+      {
+        "datetime": "2025-10-17T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 190877
+      },
+      {
+        "datetime": "2025-10-18T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 126870
+      },
+      {
+        "datetime": "2025-10-19T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 131424
+      },
+      {
+        "datetime": "2025-10-20T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 160448
+      },
+      {
+        "datetime": "2025-10-21T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 196008
+      },
+      {
+        "datetime": "2025-10-22T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 193794
+      },
+      {
+        "datetime": "2025-10-23T00:00:00.000Z",
+        "Article Count": 1,
+        "All Articles": 230154
+      },
+      {
+        "datetime": "2025-10-24T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 200385
+      },
+      {
+        "datetime": "2025-10-25T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 172045
+      },
+      {
+        "datetime": "2025-10-26T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 139916
+      },
+      {
+        "datetime": "2025-10-27T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 149363
+      },
+      {
+        "datetime": "2025-10-28T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 154965
+      },
+      {
+        "datetime": "2025-10-29T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 186021
+      },
+      {
+        "datetime": "2025-10-30T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 210826
+      },
+      {
+        "datetime": "2025-10-31T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 163618
+      },
+      {
+        "datetime": "2025-11-01T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 159705
+      },
+      {
+        "datetime": "2025-11-02T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 122152
+      },
+      {
+        "datetime": "2025-11-03T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 132496
+      },
+      {
+        "datetime": "2025-11-04T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 179876
+      },
+      {
+        "datetime": "2025-11-05T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 143915
+      },
+      {
+        "datetime": "2025-11-06T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 204945
+      },
+      {
+        "datetime": "2025-11-07T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 172637
+      },
+      {
+        "datetime": "2025-11-08T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 151320
+      },
+      {
+        "datetime": "2025-11-09T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 137748
+      },
+      {
+        "datetime": "2025-11-10T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 120645
+      },
+      {
+        "datetime": "2025-11-11T00:00:00.000Z",
+        "Article Count": 1,
+        "All Articles": 173808
+      },
+      {
+        "datetime": "2025-11-12T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 205919
+      },
+      {
+        "datetime": "2025-11-13T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 159637
+      },
+      {
+        "datetime": "2025-11-14T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 197157
+      },
+      {
+        "datetime": "2025-11-15T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 167820
+      },
+      {
+        "datetime": "2025-11-16T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 159044
+      },
+      {
+        "datetime": "2025-11-17T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 200469
+      },
+      {
+        "datetime": "2025-11-18T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 204958
+      },
+      {
+        "datetime": "2025-11-19T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 138388
+      },
+      {
+        "datetime": "2025-11-20T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 180180
+      },
+      {
+        "datetime": "2025-11-21T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 179273
+      },
+      {
+        "datetime": "2025-11-22T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 154324
+      },
+      {
+        "datetime": "2025-11-23T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 134268
+      },
+      {
+        "datetime": "2025-11-24T00:00:00.000Z",
+        "Article Count": 1,
+        "All Articles": 189397
+      },
+      {
+        "datetime": "2025-11-25T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 182677
+      },
+      {
+        "datetime": "2025-11-26T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 183381
+      },
+      {
+        "datetime": "2025-11-27T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 127071
+      },
+      {
+        "datetime": "2025-11-28T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 190322
+      },
+      {
+        "datetime": "2025-11-29T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 153375
+      },
+      {
+        "datetime": "2025-11-30T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 147416
+      },
+      {
+        "datetime": "2025-12-01T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 148794
+      },
+      {
+        "datetime": "2025-12-02T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 193417
+      },
+      {
+        "datetime": "2025-12-03T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 214441
+      },
+      {
+        "datetime": "2025-12-04T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 155292
+      },
+      {
+        "datetime": "2025-12-05T00:00:00.000Z",
+        "Article Count": 1,
+        "All Articles": 125203
+      },
+      {
+        "datetime": "2025-12-06T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 494
+      },
+      {
+        "datetime": "2025-12-07T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 140932
+      },
+      {
+        "datetime": "2025-12-08T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 181068
+      },
+      {
+        "datetime": "2025-12-09T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 159244
+      },
+      {
+        "datetime": "2025-12-10T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 200873
+      },
+      {
+        "datetime": "2025-12-11T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 155709
+      },
+      {
+        "datetime": "2025-12-12T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 187120
+      },
+      {
+        "datetime": "2025-12-13T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 135001
+      },
+      {
+        "datetime": "2025-12-14T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 123899
+      },
+      {
+        "datetime": "2025-12-15T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 182367
+      },
+      {
+        "datetime": "2025-12-16T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 198144
+      },
+      {
+        "datetime": "2025-12-17T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 228585
+      },
+      {
+        "datetime": "2025-12-18T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 215046
+      },
+      {
+        "datetime": "2025-12-19T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 200195
+      },
+      {
+        "datetime": "2025-12-20T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 134563
+      },
+      {
+        "datetime": "2025-12-21T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 148779
+      },
+      {
+        "datetime": "2025-12-22T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 160488
+      },
+      {
+        "datetime": "2025-12-23T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 219233
+      },
+      {
+        "datetime": "2025-12-24T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 187761
+      },
+      {
+        "datetime": "2025-12-25T00:00:00.000Z",
+        "Article Count": 1,
+        "All Articles": 140380
+      },
+      {
+        "datetime": "2025-12-26T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 159916
+      },
+      {
+        "datetime": "2025-12-27T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 137431
+      },
+      {
+        "datetime": "2025-12-28T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 131303
+      },
+      {
+        "datetime": "2025-12-29T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 176613
+      },
+      {
+        "datetime": "2025-12-30T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 154614
+      },
+      {
+        "datetime": "2025-12-31T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 177972
+      },
+      {
+        "datetime": "2026-01-01T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 138144
+      },
+      {
+        "datetime": "2026-01-02T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 164611
+      },
+      {
+        "datetime": "2026-01-03T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 125367
+      },
+      {
+        "datetime": "2026-01-04T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 126399
+      },
+      {
+        "datetime": "2026-01-05T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 180929
+      },
+      {
+        "datetime": "2026-01-06T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 137632
+      },
+      {
+        "datetime": "2026-01-07T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 178364
+      },
+      {
+        "datetime": "2026-01-08T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 187056
+      },
+      {
+        "datetime": "2026-01-09T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 178962
+      },
+      {
+        "datetime": "2026-01-10T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 162128
+      },
+      {
+        "datetime": "2026-01-11T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 123113
+      },
+      {
+        "datetime": "2026-01-12T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 155352
+      },
+      {
+        "datetime": "2026-01-13T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 214908
+      },
+      {
+        "datetime": "2026-01-14T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 192646
+      },
+      {
+        "datetime": "2026-01-15T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 191755
+      },
+      {
+        "datetime": "2026-01-16T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 154566
+      },
+      {
+        "datetime": "2026-01-17T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 110343
+      },
+      {
+        "datetime": "2026-01-18T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 102886
+      },
+      {
+        "datetime": "2026-01-19T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 122748
+      },
+      {
+        "datetime": "2026-01-20T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 175050
+      },
+      {
+        "datetime": "2026-01-21T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 164792
+      },
+      {
+        "datetime": "2026-01-22T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 171587
+      },
+      {
+        "datetime": "2026-01-23T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 112203
+      },
+      {
+        "datetime": "2026-01-24T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 131649
+      },
+      {
+        "datetime": "2026-01-25T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 106612
+      },
+      {
+        "datetime": "2026-01-26T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 165437
+      },
+      {
+        "datetime": "2026-01-27T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 127190
+      },
+      {
+        "datetime": "2026-01-28T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 155000
+      },
+      {
+        "datetime": "2026-01-29T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 154974
+      },
+      {
+        "datetime": "2026-01-30T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 135991
+      },
+      {
+        "datetime": "2026-01-31T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 133068
+      },
+      {
+        "datetime": "2026-02-01T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 112692
+      },
+      {
+        "datetime": "2026-02-02T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 132188
+      },
+      {
+        "datetime": "2026-02-03T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 121028
+      },
+      {
+        "datetime": "2026-02-04T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 150526
+      },
+      {
+        "datetime": "2026-02-05T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 128503
+      },
+      {
+        "datetime": "2026-02-06T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 126875
+      },
+      {
+        "datetime": "2026-02-07T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 137960
+      },
+      {
+        "datetime": "2026-02-08T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 117891
+      },
+      {
+        "datetime": "2026-02-09T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 155352
+      },
+      {
+        "datetime": "2026-02-10T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 137013
+      },
+      {
+        "datetime": "2026-02-11T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 144564
+      },
+      {
+        "datetime": "2026-02-12T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 134229
+      },
+      {
+        "datetime": "2026-02-13T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 122746
+      },
+      {
+        "datetime": "2026-02-14T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 130793
+      },
+      {
+        "datetime": "2026-02-15T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 119948
+      },
+      {
+        "datetime": "2026-02-16T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 133195
+      },
+      {
+        "datetime": "2026-02-17T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 122464
+      },
+      {
+        "datetime": "2026-02-18T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 123086
+      },
+      {
+        "datetime": "2026-02-19T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 133793
+      },
+      {
+        "datetime": "2026-02-20T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 131330
+      },
+      {
+        "datetime": "2026-02-21T00:00:00.000Z",
+        "Article Count": 1,
+        "All Articles": 119917
+      },
+      {
+        "datetime": "2026-02-22T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 87513
+      },
+      {
+        "datetime": "2026-02-23T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 116992
+      },
+      {
+        "datetime": "2026-02-24T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 130728
+      },
+      {
+        "datetime": "2026-02-25T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 128111
+      },
+      {
+        "datetime": "2026-02-26T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 178580
+      },
+      {
+        "datetime": "2026-02-27T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 131748
+      },
+      {
+        "datetime": "2026-02-28T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 1949
+      },
+      {
+        "datetime": "2026-03-01T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 124206
+      },
+      {
+        "datetime": "2026-03-02T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 145797
+      },
+      {
+        "datetime": "2026-03-03T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 160429
+      },
+      {
+        "datetime": "2026-03-04T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 205498
+      },
+      {
+        "datetime": "2026-03-05T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 149155
+      },
+      {
+        "datetime": "2026-03-06T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 169339
+      },
+      {
+        "datetime": "2026-03-07T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 122996
+      },
+      {
+        "datetime": "2026-03-08T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 116506
+      },
+      {
+        "datetime": "2026-03-09T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 159405
+      },
+      {
+        "datetime": "2026-03-10T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 158369
+      },
+      {
+        "datetime": "2026-03-11T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 178260
+      },
+      {
+        "datetime": "2026-03-12T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 197426
+      },
+      {
+        "datetime": "2026-03-13T00:00:00.000Z",
+        "Article Count": 1,
+        "All Articles": 152997
+      },
+      {
+        "datetime": "2026-03-14T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 121101
+      },
+      {
+        "datetime": "2026-03-15T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 104825
+      },
+      {
+        "datetime": "2026-03-16T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 184090
+      },
+      {
+        "datetime": "2026-03-17T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 193123
+      },
+      {
+        "datetime": "2026-03-18T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 154792
+      },
+      {
+        "datetime": "2026-03-19T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 139418
+      },
+      {
+        "datetime": "2026-03-20T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 154240
+      },
+      {
+        "datetime": "2026-03-21T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 101846
+      },
+      {
+        "datetime": "2026-03-22T00:00:00.000Z",
+        "Article Count": 2,
+        "All Articles": 102595
+      },
+      {
+        "datetime": "2026-03-23T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 142713
+      },
+      {
+        "datetime": "2026-03-24T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 177582
+      },
+      {
+        "datetime": "2026-03-25T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 175150
+      },
+      {
+        "datetime": "2026-03-26T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 169843
+      },
+      {
+        "datetime": "2026-03-27T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 133392
+      },
+      {
+        "datetime": "2026-03-28T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 111533
+      },
+      {
+        "datetime": "2026-03-29T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 108447
+      },
+      {
+        "datetime": "2026-03-30T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 179195
+      },
+      {
+        "datetime": "2026-03-31T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 149181
+      },
+      {
+        "datetime": "2026-04-01T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 183327
+      },
+      {
+        "datetime": "2026-04-02T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 151046
+      },
+      {
+        "datetime": "2026-04-03T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 134715
+      },
+      {
+        "datetime": "2026-04-04T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 113161
+      },
+      {
+        "datetime": "2026-04-05T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 95970
+      },
+      {
+        "datetime": "2026-04-06T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 123095
+      },
+      {
+        "datetime": "2026-04-07T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 153024
+      },
+      {
+        "datetime": "2026-04-08T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 145631
+      },
+      {
+        "datetime": "2026-04-09T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 159118
+      },
+      {
+        "datetime": "2026-04-10T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 141522
+      },
+      {
+        "datetime": "2026-04-11T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 118284
+      },
+      {
+        "datetime": "2026-04-12T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 96377
+      },
+      {
+        "datetime": "2026-04-13T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 112099
+      },
+      {
+        "datetime": "2026-04-14T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 178675
+      },
+      {
+        "datetime": "2026-04-15T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 170162
+      },
+      {
+        "datetime": "2026-04-16T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 182814
+      },
+      {
+        "datetime": "2026-04-17T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 173900
+      },
+      {
+        "datetime": "2026-04-18T00:00:00.000Z",
+        "Article Count": 1,
+        "All Articles": 105372
+      },
+      {
+        "datetime": "2026-04-19T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 119636
+      },
+      {
+        "datetime": "2026-04-20T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 155119
+      },
+      {
+        "datetime": "2026-04-21T00:00:00.000Z",
+        "Article Count": 1,
+        "All Articles": 171556
+      },
+      {
+        "datetime": "2026-04-22T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 191394
+      },
+      {
+        "datetime": "2026-04-23T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 214966
+      },
+      {
+        "datetime": "2026-04-24T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 186067
+      },
+      {
+        "datetime": "2026-04-25T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 148214
+      },
+      {
+        "datetime": "2026-04-26T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 107812
+      },
+      {
+        "datetime": "2026-04-27T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 152094
+      },
+      {
+        "datetime": "2026-04-28T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 137957
+      },
+      {
+        "datetime": "2026-04-29T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 167483
+      },
+      {
+        "datetime": "2026-04-30T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 176732
+      },
+      {
+        "datetime": "2026-05-01T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 113729
+      },
+      {
+        "datetime": "2026-05-02T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 132098
+      },
+      {
+        "datetime": "2026-05-03T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 113438
+      },
+      {
+        "datetime": "2026-05-04T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 131891
+      },
+      {
+        "datetime": "2026-05-05T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 148873
+      },
+      {
+        "datetime": "2026-05-06T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 180578
+      },
+      {
+        "datetime": "2026-05-07T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 181028
+      },
+      {
+        "datetime": "2026-05-08T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 167527
+      },
+      {
+        "datetime": "2026-05-09T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 133316
+      },
+      {
+        "datetime": "2026-05-10T00:00:00.000Z",
+        "Article Count": 1,
+        "All Articles": 111740
+      },
+      {
+        "datetime": "2026-05-11T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 153737
+      },
+      {
+        "datetime": "2026-05-12T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 160779
+      },
+      {
+        "datetime": "2026-05-13T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 160831
+      },
+      {
+        "datetime": "2026-05-14T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 157615
+      },
+      {
+        "datetime": "2026-05-15T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 154400
+      },
+      {
+        "datetime": "2026-05-16T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 146332
+      },
+      {
+        "datetime": "2026-05-17T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 107365
+      },
+      {
+        "datetime": "2026-05-18T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 99944
+      },
+      {
+        "datetime": "2026-05-19T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 143055
+      },
+      {
+        "datetime": "2026-05-20T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 148781
+      },
+      {
+        "datetime": "2026-05-21T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 177762
+      },
+      {
+        "datetime": "2026-05-22T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 179505
+      },
+      {
+        "datetime": "2026-05-23T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 127762
+      },
+      {
+        "datetime": "2026-05-24T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 100767
+      },
+      {
+        "datetime": "2026-05-25T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 134886
+      },
+      {
+        "datetime": "2026-05-26T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 153836
+      },
+      {
+        "datetime": "2026-05-27T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 180240
+      },
+      {
+        "datetime": "2026-05-28T00:00:00.000Z",
+        "Article Count": 2,
+        "All Articles": 187280
+      },
+      {
+        "datetime": "2026-05-29T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 143525
+      },
+      {
+        "datetime": "2026-05-30T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 92808
+      },
+      {
+        "datetime": "2026-05-31T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 92667
+      },
+      {
+        "datetime": "2026-06-01T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 159665
+      },
+      {
+        "datetime": "2026-06-02T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 182921
+      },
+      {
+        "datetime": "2026-06-03T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 176051
+      },
+      {
+        "datetime": "2026-06-04T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 214292
+      },
+      {
+        "datetime": "2026-06-05T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 151823
+      },
+      {
+        "datetime": "2026-06-06T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 102935
+      },
+      {
+        "datetime": "2026-06-07T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 85935
+      },
+      {
+        "datetime": "2026-06-08T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 161102
+      },
+      {
+        "datetime": "2026-06-09T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 156115
+      },
+      {
+        "datetime": "2026-06-10T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 165198
+      },
+      {
+        "datetime": "2026-06-11T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 171408
+      },
+      {
+        "datetime": "2026-06-12T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 160194
+      },
+      {
+        "datetime": "2026-06-13T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 116895
+      },
+      {
+        "datetime": "2026-06-14T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 77541
+      },
+      {
+        "datetime": "2026-06-15T00:00:00.000Z",
+        "Article Count": 1,
+        "All Articles": 155787
+      },
+      {
+        "datetime": "2026-06-16T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 146716
+      },
+      {
+        "datetime": "2026-06-17T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 192921
+      },
+      {
+        "datetime": "2026-06-18T00:00:00.000Z",
+        "Article Count": 1,
+        "All Articles": 171553
+      },
+      {
+        "datetime": "2026-06-19T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 154648
+      },
+      {
+        "datetime": "2026-06-20T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 87585
+      },
+      {
+        "datetime": "2026-06-21T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 107210
+      },
+      {
+        "datetime": "2026-06-22T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 163777
+      },
+      {
+        "datetime": "2026-06-23T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 180322
+      },
+      {
+        "datetime": "2026-06-24T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 151549
+      },
+      {
+        "datetime": "2026-06-25T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 170512
+      },
+      {
+        "datetime": "2026-06-26T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 135507
+      },
+      {
+        "datetime": "2026-06-27T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 130871
+      },
+      {
+        "datetime": "2026-06-28T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 65713
+      },
+      {
+        "datetime": "2026-06-29T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 119684
+      },
+      {
+        "datetime": "2026-06-30T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 116092
+      },
+      {
+        "datetime": "2026-07-05T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 99069
+      },
+      {
+        "datetime": "2026-07-06T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 113245
+      },
+      {
+        "datetime": "2026-07-07T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 146923
+      },
+      {
+        "datetime": "2026-07-08T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 158000
+      },
+      {
+        "datetime": "2026-07-09T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 165766
+      },
+      {
+        "datetime": "2026-07-10T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 153333
+      },
+      {
+        "datetime": "2026-07-11T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 115589
+      },
+      {
+        "datetime": "2026-07-12T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 111326
+      },
+      {
+        "datetime": "2026-07-13T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 163591
+      },
+      {
+        "datetime": "2026-07-14T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 169835
+      },
+      {
+        "datetime": "2026-07-15T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 171287
+      },
+      {
+        "datetime": "2026-07-16T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 184152
+      },
+      {
+        "datetime": "2026-07-17T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 171520
+      },
+      {
+        "datetime": "2026-07-18T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 124309
+      },
+      {
+        "datetime": "2026-07-19T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 99201
+      },
+      {
+        "datetime": "2026-07-20T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 129669
+      },
+      {
+        "datetime": "2026-07-21T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 184866
+      },
+      {
+        "datetime": "2026-07-22T00:00:00.000Z",
+        "Article Count": 2,
+        "All Articles": 178527
+      },
+      {
+        "datetime": "2026-07-23T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 162852
+      },
+      {
+        "datetime": "2026-07-24T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 145879
+      },
+      {
+        "datetime": "2026-07-25T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 92281
+      },
+      {
+        "datetime": "2026-07-26T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 98797
+      },
+      {
+        "datetime": "2026-07-27T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 137794
+      },
+      {
+        "datetime": "2026-07-28T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 193271
+      },
+      {
+        "datetime": "2026-07-29T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 162086
+      },
+      {
+        "datetime": "2026-07-30T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 168455
+      },
+      {
+        "datetime": "2026-07-31T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 149894
+      },
+      {
+        "datetime": "2026-08-01T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 110262
+      },
+      {
+        "datetime": "2026-08-02T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 103171
+      },
+      {
+        "datetime": "2026-08-03T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 147538
+      },
+      {
+        "datetime": "2026-08-04T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 157631
+      },
+      {
+        "datetime": "2026-08-05T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 175970
+      },
+      {
+        "datetime": "2026-08-06T00:00:00.000Z",
+        "Article Count": 1,
+        "All Articles": 159186
+      },
+      {
+        "datetime": "2026-08-07T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 117971
+      },
+      {
+        "datetime": "2026-08-08T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 114555
+      },
+      {
+        "datetime": "2026-08-09T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 103098
+      },
+      {
+        "datetime": "2026-08-10T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 115167
+      },
+      {
+        "datetime": "2026-08-11T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 131138
+      },
+      {
+        "datetime": "2026-08-12T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 140458
+      },
+      {
+        "datetime": "2026-08-13T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 179907
+      },
+      {
+        "datetime": "2026-08-14T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 194350
+      },
+      {
+        "datetime": "2026-08-15T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 108259
+      },
+      {
+        "datetime": "2026-08-16T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 103863
+      },
+      {
+        "datetime": "2026-08-17T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 116203
+      },
+      {
+        "datetime": "2026-08-18T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 169174
+      },
+      {
+        "datetime": "2026-08-19T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 157610
+      },
+      {
+        "datetime": "2026-08-20T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 171970
+      },
+      {
+        "datetime": "2026-08-21T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 160721
+      },
+      {
+        "datetime": "2026-08-22T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 98241
+      },
+      {
+        "datetime": "2026-08-23T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 88414
+      },
+      {
+        "datetime": "2026-08-24T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 117661
+      },
+      {
+        "datetime": "2026-08-25T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 132186
+      },
+      {
+        "datetime": "2026-08-26T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 179831
+      },
+      {
+        "datetime": "2026-08-27T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 172877
+      },
+      {
+        "datetime": "2026-08-28T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 125894
+      },
+      {
+        "datetime": "2026-08-29T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 91911
+      },
+      {
+        "datetime": "2026-08-30T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 79465
+      },
+      {
+        "datetime": "2026-08-31T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 107519
+      },
+      {
+        "datetime": "2026-09-01T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 116481
+      },
+      {
+        "datetime": "2026-09-02T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 105316
+      },
+      {
+        "datetime": "2026-09-03T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 120602
+      },
+      {
+        "datetime": "2026-09-04T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 156481
+      },
+      {
+        "datetime": "2026-09-05T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 102774
+      },
+      {
+        "datetime": "2026-09-06T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 98645
+      },
+      {
+        "datetime": "2026-09-07T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 118079
+      },
+      {
+        "datetime": "2026-09-08T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 77318
+      },
+      {
+        "datetime": "2026-09-09T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 158938
+      },
+      {
+        "datetime": "2026-09-10T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 155062
+      },
+      {
+        "datetime": "2026-09-11T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 154253
+      },
+      {
+        "datetime": "2026-09-12T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 120863
+      },
+      {
+        "datetime": "2026-09-13T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 29203
+      },
+      {
+        "datetime": "2026-09-20T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 105485
+      },
+      {
+        "datetime": "2026-09-21T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 108510
+      },
+      {
+        "datetime": "2026-09-22T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 105779
+      },
+      {
+        "datetime": "2026-09-23T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 149817
+      },
+      {
+        "datetime": "2026-09-24T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 155942
+      },
+      {
+        "datetime": "2026-09-25T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 58811
+      },
+      {
+        "datetime": "2026-09-27T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 77392
+      },
+      {
+        "datetime": "2026-09-28T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 121105
+      },
+      {
+        "datetime": "2026-09-29T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 134919
+      },
+      {
+        "datetime": "2026-09-30T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 111356
+      },
+      {
+        "datetime": "2026-10-01T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 174731
+      },
+      {
+        "datetime": "2026-10-02T00:00:00.000Z",
+        "Article Count": 0,
+        "All Articles": 46896
+      }
+    ]
+  }
+}

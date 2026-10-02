@@ -1,0 +1,48 @@
+{
+  "key_raw": "articles:Temenos AG:3m",
+  "cached_at": "2026-10-02T12:15:05.942111+00:00",
+  "data": {
+    "columns": [
+      "url",
+      "url_mobile",
+      "title",
+      "seendate",
+      "socialimage",
+      "domain",
+      "language",
+      "sourcecountry"
+    ],
+    "records": [
+      {
+        "url": "https://www.finanzen.ch/nachrichten/aktien/temenos-q2-profit-down-1036352932",
+        "url_mobile": "",
+        "title": "Temenos Q2 Profit Down",
+        "seendate": "20260722T181500Z",
+        "socialimage": "",
+        "domain": "finanzen.ch",
+        "language": "English",
+        "sourcecountry": "Switzerland"
+      },
+      {
+        "url": "https://www.rttnews.com/3669421/temenos-q2-profit-down.aspx",
+        "url_mobile": "",
+        "title": "Temenos Q2 Profit Down",
+        "seendate": "20260722T181500Z",
+        "socialimage": "",
+        "domain": "rttnews.com",
+        "language": "English",
+        "sourcecountry": "United States"
+      },
+      {
+        "url": "https://nearshoreamericas.com/metrics-manipulation-taskus-case-highlights-irregularities/",
+        "url_mobile": "",
+        "title": "Metrics Manipulation : TaskUs Case Highlights Irregularities",
+        "seendate": "20260806T131500Z",
+        "socialimage": "https://nearshoreamericas.com/wp-content/uploads/2026/08/BPO.jpg",
+        "domain": "nearshoreamericas.com",
+        "language": "English",
+        "sourcecountry": "Mexico"
+      }
+    ]
+  }
+}

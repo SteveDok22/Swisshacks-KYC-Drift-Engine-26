@@ -1,0 +1,78 @@
+{
+  "key_raw": "articles:WW International, Inc.:3m",
+  "cached_at": "2026-10-02T12:15:50.411734+00:00",
+  "data": {
+    "columns": [
+      "url",
+      "url_mobile",
+      "title",
+      "seendate",
+      "socialimage",
+      "domain",
+      "language",
+      "sourcecountry"
+    ],
+    "records": [
+      {
+        "url": "https://www.themarketsdaily.com/2026/09/09/critical-contrast-frontdoor-nasdaqftdr-vs-ww-international-nasdaqww.html",
+        "url_mobile": "",
+        "title": "Critical Contrast : Frontdoor ( NASDAQ : FTDR ) vs . WW International ( NASDAQ : WW ) ",
+        "seendate": "20260909T030000Z",
+        "socialimage": "",
+        "domain": "themarketsdaily.com",
+        "language": "English",
+        "sourcecountry": "United States"
+      },
+      {
+        "url": "https://www.themarketsdaily.com/2026/08/27/ww-international-nasdaqww-and-grand-canyon-education-nasdaqlope-critical-analysis.html",
+        "url_mobile": "",
+        "title": "WW International ( NASDAQ : WW ) and Grand Canyon Education ( NASDAQ : LOPE ) Critical Analysis",
+        "seendate": "20260827T031500Z",
+        "socialimage": "",
+        "domain": "themarketsdaily.com",
+        "language": "English",
+        "sourcecountry": "United States"
+      },
+      {
+        "url": "https://www.dailypolitical.com/2026/09/21/strategic-education-nasdaqstra-ww-international-nasdaqww-critical-comparison.html",
+        "url_mobile": "",
+        "title": "Strategic Education ( NASDAQ : STRA ) & WW International ( NASDAQ : WW ) Critical Comparison",
+        "seendate": "20260921T163000Z",
+        "socialimage": "",
+        "domain": "dailypolitical.com",
+        "language": "English",
+        "sourcecountry": "United States"
+      },
+      {
+        "url": "https://www.manilatimes.net/2026/08/06/tmt-newswire/globenewswire/weight-watchers-announces-second-quarter-2026-results/2399344",
+        "url_mobile": "https://www.manilatimes.net/2026/08/06/tmt-newswire/globenewswire/weight-watchers-announces-second-quarter-2026-results/2399344/amp",
+        "title": "Weight Watchers Announces Second Quarter 2026 Results",
+        "seendate": "20260805T204500Z",
+        "socialimage": "https://manilatimes.net/manilatimes/uploads/images/2026/08/06/1165618.png",
+        "domain": "manilatimes.net",
+        "language": "English",
+        "sourcecountry": "Philippines"
+      },
+      {
+        "url": "https://finance.yahoo.com/healthcare/articles/ww-international-q2-earnings-call-070400968.html",
+        "url_mobile": "",
+        "title": "WW International Q2 Earnings Call Highlights",
+        "seendate": "20260806T074500Z",
+        "socialimage": "https://s.yimg.com/lo/mysterio/api/7BC29EFE49CB898C2A474AEAC971A2E0500164FDF3DDFD3DA14B91AC87AF474A/subgraphmysterio/resizefill_w1200_h675;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Fmarketbeat_955%2F8104da0d8cc7229952947c48968615ac",
+        "domain": "finance.yahoo.com",
+        "language": "English",
+        "sourcecountry": "United States"
+      },
+      {
+        "url": "https://www.fool.com/earnings/call-transcripts/2026/08/12/ww-ww-q2-2026-earnings-call-transcript/?source=iedfolrf0000001",
+        "url_mobile": "",
+        "title": "WW ( WW ) Q2 2026 Earnings Call Transcript",
+        "seendate": "20260813T014500Z",
+        "socialimage": "https://cdn.content.foolcdn.com/images/1umn9qeh/production/b4204f36ed605fc54d4ba32e2cb31d1dd892afd6-800x450.jpg?&q=75&fit=max&auto=format",
+        "domain": "fool.com",
+        "language": "English",
+        "sourcecountry": "United States"
+      }
+    ]
+  }
+}
