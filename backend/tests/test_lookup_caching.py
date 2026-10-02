@@ -74,9 +74,39 @@ async def test_parent_lookup_caches_successful_no_parent():
     assert len(calls) == 1
 
 
+async def test_parent_lookup_caches_gleif_no_parent_404():
+    # GLEIF's definitive "no parent reported" answer (real response shape).
+    body = {"errors": [{"status": "404", "title": "Resource not found",
+                        "detail": "Related resource not found"}]}
+    adapter, _, calls = _adapter(lambda r: httpx.Response(404, json=body))
+    assert await adapter._get_parent_lei(_LEI) is None
+    assert await adapter._get_parent_lei(_LEI) is None
+    assert len(calls) == 1
+
+
 @pytest.mark.parametrize("status", [404, 429, 500])
 async def test_parent_lookup_error_is_not_cached(status):
     adapter, cache, calls = _adapter(lambda r: httpx.Response(status))
+    assert await adapter._get_parent_lei(_LEI) is None
+    assert await adapter._get_parent_lei(_LEI) is None
+    assert len(calls) == 2
+    assert cache.store == {}
+
+
+async def test_parent_lookup_html_404_is_not_cached():
+    # Unknown LEI / wrong path: GLEIF returns an HTML page, not the JSON error.
+    adapter, cache, calls = _adapter(
+        lambda r: httpx.Response(404, text="<!DOCTYPE html><title>Not Found</title>")
+    )
+    assert await adapter._get_parent_lei(_LEI) is None
+    assert await adapter._get_parent_lei(_LEI) is None
+    assert len(calls) == 2
+    assert cache.store == {}
+
+
+async def test_parent_lookup_other_json_404_is_not_cached():
+    body = {"errors": [{"status": "404", "detail": "Something else"}]}
+    adapter, cache, calls = _adapter(lambda r: httpx.Response(404, json=body))
     assert await adapter._get_parent_lei(_LEI) is None
     assert await adapter._get_parent_lei(_LEI) is None
     assert len(calls) == 2
