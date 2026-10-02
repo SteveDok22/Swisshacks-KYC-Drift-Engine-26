@@ -275,6 +275,12 @@ class GleifAdapter(CostMixin, RegistryAdapter):
         return lei  # type: ignore[no-any-return]
 
     async def _get_parent_lei(self, lei: str) -> str | None:
+        # Wrapped as {"lei": ...} so a successful "no parent" answer is cacheable
+        # too (a bare None would read back as a cache miss). Only 2xx responses
+        # are cached; errors and 429s are retried on the next call.
+        cached = self._cache.get(f"parent:{lei}")
+        if cached is not None:
+            return cached.get("lei")  # type: ignore[no-any-return]
         try:
             resp = await self._http.get(f"/lei-records/{lei}/ultimate-parent")
         except httpx.TransportError:
@@ -282,9 +288,9 @@ class GleifAdapter(CostMixin, RegistryAdapter):
         if not resp.is_success:
             return None
         data = resp.json().get("data")
-        if not data:
-            return None
-        return data.get("id") or data.get("attributes", {}).get("lei")  # type: ignore[no-any-return]
+        parent = (data.get("id") or data.get("attributes", {}).get("lei")) if data else None
+        self._cache.set(f"parent:{lei}", {"lei": parent})
+        return parent  # type: ignore[no-any-return]
 
     async def _get_children_leis(self, lei: str) -> list[str]:
         """
@@ -296,8 +302,13 @@ class GleifAdapter(CostMixin, RegistryAdapter):
         walk and returns whatever was collected so far, so a mid-pagination
         GLEIF hiccup yields a partial graph rather than an exception or [].
         Single-page responses (absent/null ``links.next``) return after one
-        request, matching the previous behaviour.
+        request, matching the previous behaviour. Only a walk that finished
+        without errors is cached; a partial result is never persisted.
         """
+        cached = self._cache.get(f"children:{lei}")
+        if cached is not None:
+            return list(cached.get("leis", []))
+
         leis: list[str] = []
         # First request: explicitly ask for the largest page; subsequent pages
         # follow the absolute ``links.next`` URL, which already carries page[size].
@@ -310,9 +321,9 @@ class GleifAdapter(CostMixin, RegistryAdapter):
             try:
                 resp = await self._http.get(url, params=params)
             except httpx.TransportError:
-                break
+                return leis
             if not resp.is_success:
-                break
+                return leis
 
             body = resp.json()
             for item in body.get("data", []):
@@ -320,6 +331,7 @@ class GleifAdapter(CostMixin, RegistryAdapter):
                 if child:
                     leis.append(child)
                     if len(leis) >= _MAX_DIRECT_CHILDREN:
+                        self._cache.set(f"children:{lei}", {"leis": leis})
                         return leis
 
             # Follow the JSON:API cursor. ``links.next`` is an absolute URL with
@@ -328,6 +340,7 @@ class GleifAdapter(CostMixin, RegistryAdapter):
             url = links.get("next")
             params = None
 
+        self._cache.set(f"children:{lei}", {"leis": leis})
         return leis
 
     # ------------------------------------------------------------------
