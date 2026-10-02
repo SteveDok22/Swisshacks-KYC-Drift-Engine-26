@@ -366,6 +366,11 @@ class DriftEngine:
     """Orchestrates drift detection over the customer book."""
 
     _LIST_CACHE_TTL: float = 30.0  # seconds — controls list_subjects() hot-path cache
+    # Per-customer analysis reuse for LIVE entities across list/detail/scan
+    # requests. They hit external APIs (rate-limited, up to ~30 s each), so
+    # re-analysing them on every request made the workspace take minutes to
+    # load. Synthetic customers are cheap and deterministic and stay uncached.
+    _ANALYSIS_CACHE_TTL: float = 600.0  # seconds
 
     def __init__(self) -> None:
         self._book: list[SyntheticCustomer] = generate_book()
@@ -392,6 +397,7 @@ class DriftEngine:
         self._cohort_cv = cohort_volatility([c.monthly_volume for c in self._book])
         self._list_cache: list[DriftSubjectSummary] | None = None
         self._list_cache_at: float = 0.0
+        self._analysis_cache: dict[str, tuple[float, dict]] = {}
         # Optional XGBoost drift model — loaded lazily; absent = heuristic-only.
         self._drift_extractor = DriftFeatureExtractor()
         self._drift_model = self._load_drift_model()
@@ -1136,6 +1142,23 @@ class DriftEngine:
         analysis["ml_score"] = ml_score
         return analysis
 
+    def _cached_analysis(self, cust: SyntheticCustomer) -> dict:
+        """``_analyze_customer``, memoised per drift_id for live entities only.
+
+        Used by the request paths only; ``_analyze_customer`` itself stays
+        uncached so callers that change inputs between calls see fresh results.
+        Callers must treat the returned dict as read-only.
+        """
+        if getattr(cust, "mode", "synthetic") != "live":
+            return self._analyze_customer(cust)
+        now = time.monotonic()
+        hit = self._analysis_cache.get(cust.drift_id)
+        if hit is not None and now - hit[0] < self._ANALYSIS_CACHE_TTL:
+            return hit[1]
+        analysis = self._analyze_customer(cust)
+        self._analysis_cache[cust.drift_id] = (time.monotonic(), analysis)
+        return analysis
+
     def _build_layers(self, cust: SyntheticCustomer, analysis: dict) -> list[LayerContribution]:
         """Construct explainable per-layer contributions."""
         prop = analysis["propagated_risk"]
@@ -1352,7 +1375,7 @@ class DriftEngine:
 
         out: list[DriftSubjectSummary] = []
         for cust in self._book:
-            a = self._analyze_customer(cust)
+            a = self._cached_analysis(cust)
             signal = CustomerSignal(
                 drift_id=cust.drift_id,
                 drift_score=a["drift_score"],
@@ -1392,7 +1415,7 @@ class DriftEngine:
         cust = next((c for c in self._book if c.drift_id == drift_id), None)
         if cust is None:
             return None
-        a = self._analyze_customer(cust)
+        a = self._cached_analysis(cust)
         ds = a["drift_series"]
 
         signal = CustomerSignal(
@@ -1513,7 +1536,7 @@ class DriftEngine:
         signals = []
         analyses: dict[str, tuple[SyntheticCustomer, dict]] = {}
         for cust in self._book:
-            a = self._analyze_customer(cust)
+            a = self._cached_analysis(cust)
             analyses[cust.drift_id] = (cust, a)
             signals.append(
                 CustomerSignal(
